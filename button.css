@@ -1,0 +1,26 @@
+.convertapi-btn {
+    color: white;
+    background-color: red;
+    outline: none;
+    border: 0;
+    padding: 1ex 1em;
+    border-radius: 1ex;
+    box-shadow: 1ex 1ex 1em rgba(255,255,255,0.2) inset, -1ex -1ex 1em rgba(0,0,0,0.1) inset;
+    font-weight: bold;
+    text-shadow: #0008 0 0 0.5ex;
+}
+
+.convertapi-btn:active {
+    box-shadow: 1ex 1ex 1em rgba(0,0,0,0.1) inset, -1ex -1ex 1em rgba(255,255,255,0.2) inset;
+}
+
+.convertapi-progress {
+    background: linear-gradient(-60deg, red 0%, red 35%, #FFC8C8 40%, #FFC8C8 60%, red 65%, red 100%);
+    background-size: 2em 100%;
+    animation: spLoadBar 1.5s infinite linear;
+}
+
+@keyframes spLoadBar {
+    from { background-position: 0px 0px; }
+    to { background-position: -2em 0px; }
+}
