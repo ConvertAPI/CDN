@@ -21,6 +21,6 @@
 }
 
 @keyframes spLoadBar {
-    from { background-position: 0px 0px; }
-    to { background-position: -2em 0px; }
+    from { background-position: 0 0; }
+    to { background-position: -2em 0; }
 }
