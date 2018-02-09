@@ -4,6 +4,8 @@ ConvertApi.dataset = document.currentScript.dataset
 
 ConvertApi.init = function() {
     ConvertApi.secret = ConvertApi.dataset.secret
+    ConvertApi.apiKey = ConvertApi.dataset.apikey
+    ConvertApi.token = ConvertApi.dataset.token
     ConvertApi.buttonSelector = ConvertApi.dataset.selector ? ConvertApi.dataset.selector : '.convertapi-btn'
     ConvertApi.progressClass = ConvertApi.dataset.progressclass ? ConvertApi.dataset.progressclass : 'convertapi-progress'
     ConvertApi.errorClass = ConvertApi.dataset.errorclass ? ConvertApi.dataset.errorclass : 'convertapi-error'
@@ -59,7 +61,12 @@ ConvertApi.convert = function(fileName, format, params, done, fail){
             }
         }
     }
-    xhttp.open('POST', 'https://v2.convertapi.com/html/to/' + format + '?secret=' + ConvertApi.secret + '&filename=' + fileName + '&storefile=true&' + params, true)
+
+    let authParams = ConvertApi.secret ? '?secret=' + ConvertApi.secret : '?'
+    authParams += ConvertApi.token ? 'token=' + ConvertApi.secret : ''
+    authParams += ConvertApi.apiKey ? '&apikey=' + ConvertApi.apiKey : ''
+
+    xhttp.open('POST', 'https://v2.convertapi.com/html/to/' + format + authParams + '&filename=' + fileName + '&storefile=true&' + params, true)
     xhttp.setRequestHeader('Content-Type', 'application/octet-stream')
     xhttp.setRequestHeader('Content-Disposition', 'inline; filename="pdfbuttonpage.html"')
     xhttp.send(document.documentElement.outerHTML)
