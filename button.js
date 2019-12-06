@@ -63,7 +63,7 @@ ConvertApi.convert = function(fileName, format, params, done, fail){
     }
 
     let authParams = ConvertApi.secret ? '?secret=' + ConvertApi.secret : '?'
-    authParams += ConvertApi.token ? 'token=' + ConvertApi.secret : ''
+    authParams += ConvertApi.token ? 'token=' + ConvertApi.token : ''
     authParams += ConvertApi.apiKey ? '&apikey=' + ConvertApi.apiKey : ''
 
     xhttp.open('POST', 'https://v2.convertapi.com/html/to/' + format + authParams + '&filename=' + fileName + '&storefile=true&' + params, true)
