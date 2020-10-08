@@ -72,6 +72,6 @@ ConvertApi.convert = function(fileName, format, params, done, fail){
     xhttp.send(document.documentElement.outerHTML)
 }
 
-window.onload = function(){
+window.addEventListener('load', () => {
     ConvertApi.init()
-}
+})
