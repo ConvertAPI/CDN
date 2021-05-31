@@ -66,7 +66,7 @@ ConvertApi.convert = function(fileName, format, params, done, fail){
     authParams += ConvertApi.token ? 'token=' + ConvertApi.token : ''
     authParams += ConvertApi.apiKey ? '&apikey=' + ConvertApi.apiKey : ''
 
-    xhttp.open('POST', 'https://v2.convertapi.com/html/to/' + format + authParams + '&filename=' + fileName + '&storefile=true&' + params, true)
+    xhttp.open('POST', 'https://v2.convertapi.com/convert/html/to/' + format + authParams + '&filename=' + fileName + '&storefile=true&' + params, true)
     xhttp.setRequestHeader('Content-Type', 'application/octet-stream')
     xhttp.setRequestHeader('Content-Disposition', 'inline; filename="pdfbuttonpage.html"')
     xhttp.send(document.documentElement.outerHTML)
