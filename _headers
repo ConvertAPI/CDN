@@ -2,6 +2,5 @@
  Access-Control-Allow-Origin: *
  Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
  Access-Control-Allow-Headers: Content-Type, Content-Disposition, Cache-Control, Accept-Ranges, Content-Range, Content-Encoding, cf-cache-status
- Access-Control-Request-Method: GET
- Access-Control-Request-Headers: Content-Type, Content-Disposition, Cache-Control, Accept-Ranges, Content-Range, Content-Encoding, cf-cache-status
+ Access-Control-Expose-Headers: Content-Type, Content-Disposition, Cache-Control, Accept-Ranges, Content-Range, Content-Encoding, cf-cache-status
    
