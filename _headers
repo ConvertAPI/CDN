@@ -1,5 +1,5 @@
 /cara/testfiles/*
- Access-Control-Allow-Origin: *
+ Access-Control-Allow-Origin: localhost:5001
  Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
  Access-Control-Allow-Headers: Content-Type, Content-Disposition, Cache-Control, Accept-Ranges, Content-Range, Content-Encoding
  Access-Control-Request-Method: GET
