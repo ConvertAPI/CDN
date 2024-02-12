@@ -1,0 +1,17 @@
+{
+        "schema_version": "v1",
+        "name_for_human": "ConvertAPI",
+        "name_for_model": "convertapi",
+        "description_for_human": "High-Performance File Conversion API",
+        "description_for_model": "Integrate within minutes, and scale without limitations. Sign Up for free to tap into our extensive enterprise-grade file conversion API, with support for over 200 formats.",
+        "auth": {
+            "type": "none"
+        },
+        "api": {
+            "type": "openapi",
+            "url": "https://v2.convertapi.com/info/openapi/docx/to/pdf"
+        },
+        "logo_url": "https://www.convertapi.com/static/img/logo.svg",
+        "contact_email": "support@convertapi.com",
+        "legal_info_url": "https://www.convertapi.com/terms"
+      }
